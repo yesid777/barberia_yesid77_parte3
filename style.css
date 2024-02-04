@@ -1,0 +1,166 @@
+
+/* Encabezado*/
+header{
+    background-color: #BBBBBB; /*fondo en color gris*/
+    padding: 20px 0;/* margenes desde adentro*/
+}
+
+.caja{
+    width: 940px;/* acho de 940px, para que se ajuste a cualquier pantalla */
+    position: relative; /* Para que deje aplicar los movimientos */
+    margin: 0 auto;
+
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/* Menu de Navegacion en los ITEMS de la lista*/
+nav li{
+    display: inline;/*quedaran los enlaces o items en forma horizantal*/
+    margin: 0 0 0 15px;/*Margene de separacion entre items arib - derec -abaj - izq */
+}
+
+/*Aplicar CSS sobre los items de la lista*/
+nav a {
+    text-transform: uppercase;/* conviierte el texto en Mayuscula */
+    color: #000000;/* COLOR NEGRO */
+    font-weight: bold;/* NEGRITA */
+    font-size: 20px;/* TAMAÑO A 20PX */
+    text-decoration: none;/* QUITAR ESTILO SUBRAYADO A LOS ENLACES */
+}
+
+/* CAPTURANDO MOVIMIENTO(CAMBIO DE COLOR AL PASAR EL MOUS SOBRE EL MENU) */
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;/*El tamaño puede ser ajustado, tanto en la largura, como en la altura.*/
+    text-align: center;
+    width: 30%;/* CADA ELEMENTO OCUPE UN 30% DEL ESPACIO DE LA PAGINA*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;/*border-box,el borde de cada uno de los ítems será el límite del espacio que va a ser definido*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+}
+
+.productos li:hover{
+    color: #c78c19;
+}
+
+.productos li:active{
+    color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.product-descripcion{
+    font-size: 20px;
+}
+
+.product-precio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+
+footer{
+    text-align: center;
+    background: URL(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyrght{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* FORM MANEJA A ETIQUETAS DEL FORMULARIO */
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;/*queremos que ocupen el 50% de los 940 pixeles*/
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/*ACCIONES SOBRO EL BOTON*/
+.enviar{
+    width: 40%;/*tamaño que ocupa el boton en la pagina*/
+    padding: 15px 0;/*tamaño del boton*/
+    font-size: 18px;/*tamaño de letra*/
+    font-weight: bold;/*subrayadas*/
+    color: white;/*letras color blanco*/
+    background-color: orange;/*fondo naranja*/
+    border: none;/*borde sin color*/
+    border-radius: 5px;/*bordes redondeados del boton*/
+    transition: 1s all;/*tiepo de cambio de fondo y tamaño del boton*/
+    cursor: pointer;/*puntero de manito*/
+
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.1);/*aumenta el tamaño al pasar el cursor sobre el boton*/
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border : 1px solid #000000;
+    padding: 8px 15px;
+
+}
+
+
